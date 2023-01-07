@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 
+font-family: 'Manrope', sans-serif;
+font-family: 'Noto Serif Display', serif;
+*/
+
+/*! HomepageHero Section Start */
+
+.homepageHeroSection {
+  background: url(../../img/homepageImg/homepageHeroBg.jpg);
+  max-width: 100%;
+  min-height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homepageHeroInfoDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.homepageHeroLogoDiv {
+  max-width: 9rem;
+}
+.homepageHeroLogoImg {
+  width: 100%;
+}
+
+.homepageHeroHeading {
+  font-family: "Noto Serif", serif;
+  font-weight: 500;
+  font-size: 4.5rem;
+}
+.homepageHeroSubHeading {
+  font-size: 1.75rem;
+  font-family: "Manrope", sans-serif;
+}
+.homepageHeroButton {
+  margin: 2rem 0 1rem;
+  display: inline-block;
+  font-family: "Manrope", sans-serif;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: 2px solid #fff;
+  padding: 0.5rem;
+}
+
+/*! HomepageHero Section End */
+
+/*! mediterraInfo Section Start */
+
+.mediterraInfoContent {
+  max-width: 1200px;
+  margin: 5rem auto;
+  padding: 0 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.mediterraInfoTitleSide,
+.mediterraInfoDescSide {
+  width: 100%;
+}
+
+.mediterraInfoTitle {
+  font-family: "Noto Serif", serif;
+  font-weight: 500;
+  font-size: 3rem;
+}
+.mediterraInfoDesc {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  max-width: 35rem;
+}
+.mediterraInfoButton {
+  margin: 1rem 0 1rem;
+  display: inline-block;
+  font-family: "Manrope", sans-serif;
+  color: #000;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: 2px solid #000;
+  padding: 0.5rem;
+}
+
+/*! mediterraInfo Section End */
+
+/*! ourApproach Section Start */
+
+.ourApproachContent {
+  max-width: 1200px;
+  margin: 5rem auto;
+  padding: 0 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.ourApproachTextSide,
+.ourApproachImgSide {
+  width: 100%;
+}
+
+.ourApproachTextSideHeading {
+  font-family: "Noto Serif", serif;
+  font-weight: 400;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+.ourApproachTextSideDesc {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 2rem;
+  padding-bottom: 1rem;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.ourApproachImgDiv {
+  max-width: 27rem;
+  margin-left: auto;
+}
+.ourApproachImg {
+  width: 100%;
+}
+
+/*! ourApproach Section End */
+
+/*! Footer Section Start */
+
+.mediterraFooterContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem 0;
+}
+
+.mediterraFooterLogoDiv {
+  max-width: 4rem;
+}
+.mediterraFooterLogoImg {
+  width: 100%;
+}
+.mediterraFooterHeading {
+  font-family: "Noto Serif", serif;
+  font-weight: lighter;
+  font-size: 2rem;
+  padding: 0.5rem 0;
+}
+.mediterraFooterSubHeading {
+  font-family: "Manrope", sans-serif;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+
+/*! Footer Section End */ ;
