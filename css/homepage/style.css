@@ -36,6 +36,9 @@ font-family: 'Noto Serif Display', serif;
   position: relative;
   cursor: pointer;
 }
+.headerLinkListItem a {
+  text-decoration: none;
+}
 
 .headerLinkListInnerList {
   min-width: 10rem;
