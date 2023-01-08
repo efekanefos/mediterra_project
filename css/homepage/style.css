@@ -174,7 +174,7 @@ font-family: 'Noto Serif Display', serif;
   max-width: 1480px;
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 .propertySelectionPropertySide {
@@ -189,6 +189,7 @@ font-family: 'Noto Serif Display', serif;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  gap: 4rem;
 }
 
 .propertySelectionList {
@@ -234,7 +235,7 @@ font-family: 'Noto Serif Display', serif;
   font-size: 1.25rem;
   font-weight: 500;
   text-decoration: none;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   padding: 0.5rem;
 }
 
@@ -424,7 +425,7 @@ font-family: 'Noto Serif Display', serif;
   padding: 2rem 0;
 }
 
-.aboutUsHeadingSide,
+.aboutUsInfoHeadingSide,
 .aboutUsInfoDescSide {
   flex: 1;
 }
@@ -444,5 +445,61 @@ font-family: 'Noto Serif Display', serif;
   line-height: 1.8rem;
   padding-bottom: 1.2rem;
 }
+
+/*! OurTeam Section Start */
+
+.ourTeamContent {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.ourHeadingTitleDiv {
+  text-align: center;
+}
+.ourTeamMainHeading {
+  font-family: "Noto Serif Display", serif;
+  color: #534e4b;
+  font-size: 2.25rem;
+  font-weight: 300;
+  line-height: 3rem;
+}
+.ourTeamSubHeading {
+  font-family: "Manrope", sans-serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: #000;
+  line-height: 1.1rem;
+}
+.ourTeamCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.ourTeamCard {
+  width: 13.5rem;
+}
+.ourTeamCardName {
+  font-family: "Noto Serif Display", serif;
+  color: #534e4b;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  text-align: left;
+}
+.ourTeamCardDepartmant {
+  font-family: "Noto Serif Display", serif;
+  color: #534e4b;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 0.9rem;
+}
+.ourTeamCardInfoDiv {
+  width: 90%;
+  margin: 0 auto;
+}
+/*! OurTeam Section End */
 
 /*! About Us Section End */
