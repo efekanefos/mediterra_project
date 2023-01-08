@@ -100,6 +100,164 @@ font-family: 'Noto Serif Display', serif;
 
 /*! mediterraInfo Section End */
 
+/*! propertySelection Section Start */
+
+.propertySelectionSection {
+  background-color: #320e06;
+  padding: 3rem 5rem;
+  overflow: hidden;
+}
+
+.propertySelectionContent {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  padding: 0 5rem;
+  justify-content: center;
+  justify-items: center;
+  align-items: flex-start;
+  grid-template-columns: 1fr 2fr;
+}
+
+.propertySelectionPropertySide,
+.propertySelectionImgSide {
+  width: 100%;
+}
+
+.propertySelectionPropertySide {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+  min-width: 20rem;
+}
+
+.propertySelectionList {
+  list-style: none;
+  color: #fff;
+}
+
+.propertySelectionListItem {
+  font-family: "Manrope", sans-serif;
+  font-size: 2.5rem;
+  opacity: 0.25;
+  position: relative;
+}
+
+.propertySelectionListItem--active {
+  color: #fff;
+  opacity: 1;
+}
+
+.propertySelectionListItem--active::before {
+  content: " ";
+  width: 0.2rem;
+  height: 2.2rem;
+  background-color: #fff;
+  position: absolute;
+  top: 0.7rem;
+  left: -1rem;
+}
+
+.propertySelectionLogoDiv {
+  max-width: 5rem;
+}
+.propertySelectionLogoImg {
+  width: 100%;
+}
+
+.propertySelectionButton {
+  margin: 1rem 0 1rem;
+  display: inline-block;
+  font-family: "Manrope", sans-serif;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: 2px solid #fff;
+  padding: 0.5rem;
+}
+
+.swiperPaginations {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.propertySelectionSliderDesc {
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.25rem;
+}
+
+.swiper-button-next {
+  position: relative;
+  top: 0rem;
+  left: 2rem;
+}
+.swiper-button-prev {
+  position: relative;
+  top: 0rem;
+  left: -2rem;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 1;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-bottom: 1rem;
+}
+.swiper-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  max-width: 20rem;
+  width: 100%;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+/*! propertySelection Section End */
+
 /*! ourApproach Section Start */
 
 .ourApproachContent {

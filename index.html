@@ -4,9 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet" />
+    <!-- Google Font CSS -->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="./css/homepage/style.css" />
     <title>Mediterra</title>
   </head>
@@ -42,6 +47,57 @@
       </section>
 
       <!-- MediterraInfo Section End -->
+
+      <!-- propertySelection Section Start -->
+
+      <section class="propertySelectionSection">
+        <div class="propertySelectionContent">
+          <div class="propertySelectionPropertySide">
+            <div class="propertySelectionLogoDiv">
+              <img src="./img/homepageImg/homepageHeroLogo.png" alt="propertySelectionLogo" class="propertySelectionLogoImg" />
+            </div>
+
+            <ul class="propertySelectionList">
+              <li class="propertySelectionListItem">1 + 1</li>
+              <li class="propertySelectionListItem propertySelectionListItem--active">2 + 1</li>
+              <li class="propertySelectionListItem">3 + 1 (I)</li>
+              <li class="propertySelectionListItem">3 + 1 (L)</li>
+              <li class="propertySelectionListItem">3 + 1 Villa</li>
+              <li class="propertySelectionListItem">4 + 1 Villa</li>
+            </ul>
+
+            <a href="#" class="propertySelectionButton"> View Properties </a>
+          </div>
+          <div class="propertySelectionImgSide">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./img/homepageImg/ourApproachSideImg.jpg" alt="slideImg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/homepageImg/ourApproachSideImg.jpg" alt="slideImg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/homepageImg/ourApproachSideImg.jpg" alt="slideImg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/homepageImg/ourApproachSideImg.jpg" alt="slideImg" />
+                </div>
+              </div>
+              <div class="swiperPaginations">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+
+            <div class="propertySelectionSliderDescDiv">
+              <p class="propertySelectionSliderDesc">The modern village life, surrounded by nature, steaming the Mediterranean. Our Design & Development team is transforming it into a heartfelt home that we are proud to put our name on.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- propertySelection Section End -->
 
       <!-- ourApproach Section Start -->
 
@@ -79,6 +135,20 @@
       </section>
 
       <!-- Footer Section End -->
+
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 2,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
     </div>
   </body>
 </html>
