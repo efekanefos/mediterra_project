@@ -17,14 +17,53 @@
   </head>
   <body>
     <div class="homepageWrapper">
+      <!-- Header Section Start -->
+
+      <header class="headerSection">
+        <div class="headerContent">
+          <div class="headerLogoSide">
+            <div class="headerLogoImgDiv">
+              <img src="./img/homepageImg/headerLogo.svg" alt="headerLogo" class="headerLogoImg" />
+            </div>
+          </div>
+          <div class="headerLinkSide">
+            <ul class="headerLinkList">
+              <li class="headerLinkListItem">
+                Project +
+                <ul class="headerLinkListInnerList">
+                  <li class="headerLinkListInnerListItem">Design Foundation</li>
+                  <li class="headerLinkListInnerListItem">Properties</li>
+                  <li class="headerLinkListInnerListItem">The Mediterra</li>
+                </ul>
+              </li>
+              <li class="headerLinkListItem">
+                North west Cyprus +
+                <ul class="headerLinkListInnerList">
+                  <li class="headerLinkListInnerListItem">Design Foundation</li>
+                  <li class="headerLinkListInnerListItem">Properties</li>
+                  <li class="headerLinkListInnerListItem">The Mediterra</li>
+                </ul>
+              </li>
+              <li class="headerLinkListItem">About Us</li>
+              <li class="headerLinkListItem">Contact</li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <!-- Header Section End -->
+
       <!-- HomepageHero Section Start -->
 
       <section class="homepageHeroSection">
         <div class="homepageHeroInfoDiv">
           <div class="homepageHeroLogoDiv">
-            <img src="./img/homepageImg/homepageHeroLogo.png" alt="homepageHeroLogoImg" class="homepageHeroLogoImg" />
+            <img src="./img/homepageImg/homepageLogo_Heading.svg" alt="homepageHeroLogoImg" class="homepageHeroLogoImg" />
           </div>
+          <!-- 
+            
           <h1 class="homepageHeroHeading">MEDITERRA</h1>
+          -->
           <h3 class="homepageHeroSubHeading">A Mediterranean Welcome</h3>
           <a href="#" class="homepageHeroButton">Explore the Mediaterra</a>
         </div>
@@ -54,7 +93,7 @@
         <div class="propertySelectionContent">
           <div class="propertySelectionPropertySide">
             <div class="propertySelectionLogoDiv">
-              <img src="./img/homepageImg/homepageHeroLogo.png" alt="propertySelectionLogo" class="propertySelectionLogoImg" />
+              <img src="./img/homepageImg/homepageSlider_logo.svg" alt="propertySelectionLogo" class="propertySelectionLogoImg" />
             </div>
 
             <ul class="propertySelectionList">
@@ -72,16 +111,22 @@
             <div class="swiper mySwiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="./img/homepageImg/ourApproachSideImg.jpg" alt="slideImg" />
+                  <img src="./img/homepageImg/homepageSlider_1.png" alt="slideImg" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="./img/homepageImg/ourApproachSideImg.jpg" alt="slideImg" />
+                  <img src="./img/homepageImg/homepageSlider_2.png" alt="slideImg" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="./img/homepageImg/ourApproachSideImg.jpg" alt="slideImg" />
+                  <img src="./img/homepageImg/homepageSlider_3.png" alt="slideImg" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="./img/homepageImg/ourApproachSideImg.jpg" alt="slideImg" />
+                  <img src="./img/homepageImg/homepageSlider_3.png" alt="slideImg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/homepageImg/homepageSlider_3.png" alt="slideImg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/homepageImg/homepageSlider_3.png" alt="slideImg" />
                 </div>
               </div>
               <div class="swiperPaginations">
@@ -142,7 +187,8 @@
       <!-- Initialize Swiper -->
       <script>
         var swiper = new Swiper(".mySwiper", {
-          slidesPerView: 2,
+          slidesPerView: 3,
+          loop: true,
           navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
