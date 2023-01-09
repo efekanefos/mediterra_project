@@ -5,8 +5,30 @@
 }
 /* 
 font-family: 'Manrope', sans-serif;
-font-family: 'Noto Serif Display', serif;
+font-family: 'noto-serif', serif;
 */
+
+.container {
+  max-width: 1200px;
+  margin: 5rem auto;
+}
+.flexCenterCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexCenterStart {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.button {
+  display: inline-block;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.5rem;
+  font-family: "Manrope", sans-serif;
+}
 
 /*! Header Section Start */
 
@@ -20,7 +42,7 @@ font-family: 'Noto Serif Display', serif;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 5rem;
+  padding: 0rem 5rem;
 }
 
 .headerLinkList {
@@ -35,6 +57,7 @@ font-family: 'Noto Serif Display', serif;
   font-size: 1rem;
   position: relative;
   cursor: pointer;
+  padding: 2rem 0;
 }
 .headerLinkListItem a {
   text-decoration: none;
@@ -46,7 +69,7 @@ font-family: 'Noto Serif Display', serif;
   list-style: none;
   background-color: #fff;
   position: absolute;
-  top: 6vh;
+  top: 4.5rem;
   left: -1rem;
   padding: 0.75rem 0.25rem;
   display: none;
@@ -67,19 +90,12 @@ font-family: 'Noto Serif Display', serif;
 
 /*! HomepageHero Section Start */
 
-.homepageHeroSection,
 .heroSection {
-  background: url(../../img/homepageImg/homepageHeroBg.jpg);
+  background: url(../../img/homepageImg/homepageHeroBg.jpg) center center no-repeat;
+  background-size: cover;
   max-width: 100%;
   min-height: 92vh;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.homepageHeroInfoDiv,
 .heroInfoDiv {
   display: flex;
   flex-direction: column;
@@ -87,7 +103,6 @@ font-family: 'Noto Serif Display', serif;
   align-items: center;
   color: #fff;
 }
-
 .homepageHeroLogoDiv {
   max-width: 20rem;
   margin-bottom: 1rem;
@@ -95,50 +110,75 @@ font-family: 'Noto Serif Display', serif;
 .homepageHeroLogoImg {
   width: 100%;
 }
-
-.homepageHeroHeading,
 .heroHeading {
-  font-family: "Noto Serif", serif;
+  font-family: "noto-serif", serif;
   font-weight: 500;
   font-size: 4.5rem;
 }
-.homepageHeroSubHeading,
 .heroSubHeading {
   font-size: 1.75rem;
   font-family: "Manrope", sans-serif;
 }
-.homepageHeroButton {
+.heroButton {
   margin: 2rem 0 1rem;
-  display: inline-block;
-  font-family: "Manrope", sans-serif;
   color: #fff;
   font-size: 1.25rem;
-  font-weight: 500;
-  text-decoration: none;
   border: 2px solid #fff;
-  padding: 0.5rem;
 }
 
 /*! HomepageHero Section End */
 
+/*! ImgText Section Start */
+
+.ImgTextContent {
+  padding: 0 5rem;
+  gap: 2rem;
+}
+
+.ImgTextImgSide,
+.ImgTextTextSide {
+  flex: 1;
+}
+
+.ImgTextTextSideHeading {
+  font-family: "noto-serif";
+  font-weight: 300;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+.ImgTextTextSideDesc {
+  font-family: "Manrope", sans-serif;
+  font-weight: 300;
+  font-size: 1.1rem;
+  line-height: 2rem;
+  padding-bottom: 1rem;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.ImgTextImgSideImgDiv {
+  max-width: 27rem;
+  margin-left: auto;
+}
+.ImgTextImg {
+  width: 100%;
+}
+
+/*! ImgText Section End */
+
 /*! mediterraInfo Section Start */
 
 .mediterraInfoContent {
-  max-width: 1200px;
-  margin: 5rem auto;
   padding: 0 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
 }
 
 .mediterraInfoTitleSide,
 .mediterraInfoDescSide {
-  width: 100%;
+  flex: 1;
 }
 
 .mediterraInfoTitle {
-  font-family: "Noto Serif", serif;
+  font-family: "noto-serif", serif;
   font-weight: 400;
   font-size: 3rem;
 }
@@ -151,14 +191,9 @@ font-family: 'Noto Serif Display', serif;
 }
 .mediterraInfoButton {
   margin: 1rem 0 1rem;
-  display: inline-block;
-  font-family: "Manrope", sans-serif;
   color: #000;
   font-size: 1rem;
-  font-weight: 500;
-  text-decoration: none;
   border: 1px solid #000;
-  padding: 0.5rem;
 }
 
 /*! mediterraInfo Section End */
@@ -233,14 +268,10 @@ font-family: 'Noto Serif Display', serif;
 
 .propertySelectionButton {
   margin: 1rem 0 1rem;
-  display: inline-block;
   font-family: "Manrope", sans-serif;
   color: #fff;
   font-size: 1.25rem;
-  font-weight: 500;
-  text-decoration: none;
   border: 1px solid #fff;
-  padding: 0.5rem;
 }
 
 .swiperPaginations {
@@ -326,59 +357,12 @@ font-family: 'Noto Serif Display', serif;
 
 /*! propertySelection Section End */
 
-/*! ourApproach Section Start */
-
-.ourApproachContent {
-  max-width: 1200px;
-  margin: 5rem auto;
-  padding: 0 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 2rem;
-}
-
-.ourApproachTextSide,
-.ourApproachImgSide {
-  width: 100%;
-}
-
-.ourApproachTextSideHeading {
-  font-family: "Noto Serif", serif;
-  font-weight: 400;
-  font-size: 3rem;
-  margin-bottom: 2rem;
-  color: rgba(0, 0, 0, 0.6);
-}
-.ourApproachTextSideDesc {
-  font-family: "Manrope", sans-serif;
-  font-weight: 500;
-  font-size: 1.1rem;
-  line-height: 2rem;
-  padding-bottom: 1rem;
-  color: rgba(0, 0, 0, 0.75);
-}
-
-.ourApproachImgDiv {
-  max-width: 27rem;
-  margin-left: auto;
-}
-.ourApproachImg {
-  width: 100%;
-}
-
-/*! ourApproach Section End */
-
 /*! Footer Section Start */
 
 .mediterraFooterContent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   padding: 4rem 0;
 }
-
 .mediterraFooterLogoDiv {
   max-width: 4rem;
 }
@@ -386,7 +370,7 @@ font-family: 'Noto Serif Display', serif;
   width: 100%;
 }
 .mediterraFooterHeading {
-  font-family: "Noto Serif", serif;
+  font-family: "noto-serif", serif;
   font-weight: lighter;
   font-size: 2rem;
   padding: 0.5rem 0;
@@ -401,47 +385,36 @@ font-family: 'Noto Serif Display', serif;
 
 /*! About Us Section Start */
 
-.heroSection--aboutUs {
-  background: url(../../img/aboutImg/aboutusHeroBg.png);
-  max-width: 100%;
-  min-height: 92vh;
-  background-position: center center;
+.heroSectionSidePage {
+  background: url(../../img/aboutImg/aboutusHeroBg.png) center center no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-
-.heroHeading--aboutUs {
+.heroHeadingSidePage {
   font-weight: 300;
+  font-family: "Manrope", sans-serif;
 }
-.heroSubHeading--aboutUs {
-  font-weight: 400;
+.heroSubHeadingSidePage {
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
 }
 
-.aboutUsInfoContent {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+.HeadingDescContent {
   padding: 2rem 0;
 }
 
-.aboutUsInfoHeadingSide,
-.aboutUsInfoDescSide {
+.HeadingDescHeadingSide,
+.HeadingDescDescSide {
   flex: 1;
 }
-.aboutUsHeadingSideHeading {
-  font-family: "Noto Serif Display", serif;
+.HeadingDescHeadingSideHeading {
+  font-family: "noto-serif", serif;
   color: #534e4b;
   font-size: 2.5rem;
   font-weight: 300;
   line-height: 3.2rem;
   text-align: center;
 }
-.aboutUsInfoDesc {
+.HeadingDescDesc {
   font-family: "Manrope", sans-serif;
   font-weight: 500;
   font-size: 0.9rem;
@@ -452,15 +425,11 @@ font-family: 'Noto Serif Display', serif;
 
 /*! OurTeam Section Start */
 
-.ourTeamContent {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 .ourHeadingTitleDiv {
   text-align: center;
 }
 .ourTeamMainHeading {
-  font-family: "Noto Serif Display", serif;
+  font-family: "noto-serif", serif;
   color: #534e4b;
   font-size: 2.25rem;
   font-weight: 300;
@@ -481,23 +450,22 @@ font-family: 'Noto Serif Display', serif;
   gap: 2rem;
   padding: 2rem 0;
 }
-
 .ourTeamCard {
   width: 13.5rem;
 }
-.ourTeamCardName {
-  font-family: "Noto Serif Display", serif;
+.ourTeamCardName,
+.ourTeamCardDepartmant {
+  font-family: "noto-serif", serif;
   color: #534e4b;
-  font-size: 1rem;
   font-weight: 400;
+}
+.ourTeamCardName {
+  font-size: 1rem;
   line-height: 1.25rem;
   text-align: left;
 }
 .ourTeamCardDepartmant {
-  font-family: "Noto Serif Display", serif;
-  color: #534e4b;
   font-size: 0.75rem;
-  font-weight: 400;
   line-height: 0.9rem;
 }
 .ourTeamCardInfoDiv {
@@ -507,3 +475,44 @@ font-family: 'Noto Serif Display', serif;
 /*! OurTeam Section End */
 
 /*! About Us Section End */
+
+/*! Culture Section Start */
+
+.VerticalImgTextContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 5rem;
+}
+
+.VerticalImgTextCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.VerticalImgTextImgDiv,
+.VerticalImgTextHeading,
+.VerticalImgTextDesc {
+  width: 75%;
+  margin: 0 auto;
+}
+.VerticalImgTextHeading {
+  font-family: "noto-serif", serif;
+  color: #534e4b;
+  font-weight: 300;
+  font-size: 2.1rem;
+  padding: 1rem 0;
+}
+.VerticalImgTextDesc {
+  font-family: "Manrope", sans-serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: #000;
+  line-height: 1.75rem;
+}
+
+.VerticalImgTextImg {
+  width: 100%;
+}
+/*! Culture Section End */
