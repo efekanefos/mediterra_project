@@ -160,6 +160,10 @@ font-family: 'noto-serif', serif;
   max-width: 27rem;
   margin-left: auto;
 }
+.ImgTextImgSideImgDiv--leftSidedImg {
+  margin-right: auto;
+  margin-left: 0;
+}
 .ImgTextImg {
   width: 100%;
 }
@@ -516,3 +520,13 @@ font-family: 'noto-serif', serif;
   width: 100%;
 }
 /*! Culture Section End */
+
+/*! Nature Section Start */
+
+.BannerImg {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+}
+
+/*! Nature Section End */
