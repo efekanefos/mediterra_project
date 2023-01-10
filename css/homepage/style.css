@@ -17,10 +17,23 @@ font-family: 'noto-serif', serif;
   justify-content: center;
   align-items: center;
 }
+.flexCenterCenterColumn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .flexCenterStart {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+}
+.flexCenterStartColumn {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
 .button {
   display: inline-block;
@@ -91,7 +104,7 @@ font-family: 'noto-serif', serif;
 /*! HomepageHero Section Start */
 
 .heroSection {
-  background: url(../../img/homepageImg/homepageHeroBg.jpg) center center no-repeat;
+  background: url(../../img/homepageImg/homepageHeroBg.png) center center no-repeat;
   background-size: cover;
   max-width: 100%;
   min-height: 92vh;
@@ -143,8 +156,8 @@ font-family: 'noto-serif', serif;
 .ImgTextTextSideHeading {
   font-family: "noto-serif";
   font-weight: 300;
-  font-size: 3rem;
-  margin-bottom: 2rem;
+  font-size: 2.7rem;
+  margin-bottom: 4rem;
   color: rgba(0, 0, 0, 0.6);
 }
 .ImgTextTextSideDesc {
@@ -153,11 +166,11 @@ font-family: 'noto-serif', serif;
   font-size: 1.1rem;
   line-height: 2rem;
   padding-bottom: 1rem;
-  color: rgba(0, 0, 0, 0.75);
+  color: #000;
 }
 
 .ImgTextImgSideImgDiv {
-  max-width: 27rem;
+  max-width: 90%; /* 27rem */
   margin-left: auto;
 }
 .ImgTextImgSideImgDiv--leftSidedImg {
@@ -525,8 +538,114 @@ font-family: 'noto-serif', serif;
 
 .BannerImg {
   width: 100%;
-  max-height: 600px;
+  max-height: 100%;
   object-fit: cover;
 }
 
 /*! Nature Section End */
+
+/*! Design Foundation Page Start */
+
+.BigSizeDescContent {
+  font-family: "Manrope", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  color: #000;
+  line-height: 2.7rem;
+}
+.ImgTextContent--ExtraGap {
+  gap: 5rem;
+}
+.ImgTextTextSide--DesignFoundationSquareImg {
+  flex-direction: column;
+  margin-top: 3rem;
+}
+.MediumSizeDescContent {
+  font-family: "noto-serif", serif;
+  color: #534e4b;
+  font-weight: 300;
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  justify-content: flex-start;
+}
+
+/*! Design Foundation Page End */
+
+/*! Mediterra Page Start */
+
+.BigSizeDescContent--brown {
+  color: #412a28;
+  padding-bottom: 1rem;
+}
+.dividerHeadingContent {
+  padding: 0 5rem;
+}
+.dividerHeadingTitle {
+  font-family: "noto-serif", serif;
+  color: #534e4b;
+  font-weight: 300;
+  font-size: 2.2rem;
+  line-height: 3rem;
+}
+.dividerHeadingDesc {
+  font-family: "Manrope", sans-serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: #000;
+  line-height: 2.7rem;
+}
+.ImgTextImgSideLittleImgDiv {
+  display: flex;
+  gap: 0.25rem;
+}
+.ImgTextImgSideLittleImg {
+  width: 100%;
+  flex: 1;
+}
+.ImgTextImgSideImgDiv--multipleImage {
+  max-width: 100%;
+}
+.ImgTextTextSideHeading--multipleImage {
+  margin-bottom: 0.5rem;
+}
+
+/*! Mediterra Page End */
+
+/** Media Quaries Start */
+
+@media (max-width: 1250px) {
+  .ImgTextContent {
+    gap: 1rem;
+  }
+  .ImgTextContent,
+  .dividerHeadingContent,
+  .BigSizeDescContent {
+    padding: 1rem;
+  }
+  .ImgTextTextSideHeading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .ImgTextTextSideDesc {
+    font-size: 1rem;
+  }
+  .ImgTextImgSideImgDiv {
+    margin-left: 0;
+  }
+  .BigSizeDescContent {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    margin: 2.5rem auto;
+  }
+  .ImgTextContent {
+    flex-direction: column;
+  }
+  .ImgTextTextSide {
+    order: 1;
+  }
+}
+
+/** Media Quaries End */
