@@ -12,6 +12,26 @@ font-family: 'noto-serif', serif;
   max-width: 1200px;
   margin: 5rem auto;
 }
+.container--rightSided {
+  margin-right: 0;
+  padding-right: 0 !important;
+  max-width: 80%;
+}
+.container--leftSided {
+  margin-left: 0;
+  padding-left: 0 !important;
+  max-width: 80%;
+}
+.ImgTextSection--rightSided {
+  display: flex;
+  justify-content: flex-end;
+  margin: 5rem auto;
+}
+.ImgTextSection--leftSided {
+  display: flex;
+  justify-content: flex-start;
+}
+/*? Flex */
 .flexCenterCenter {
   display: flex;
   justify-content: center;
@@ -23,7 +43,6 @@ font-family: 'noto-serif', serif;
   align-items: center;
   flex-direction: column;
 }
-
 .flexCenterStart {
   display: flex;
   justify-content: center;
@@ -35,6 +54,20 @@ font-family: 'noto-serif', serif;
   align-items: flex-start;
   flex-direction: column;
 }
+/*? Grid */
+.twoWayGrid,
+.threeWayGridCenterStart {
+  display: grid;
+}
+.twoWayGrid {
+  grid-template-columns: repeat(2, 1fr);
+}
+.threeWayGridCenterStart {
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: flex-start;
+}
+/*? Utilities */
 .button {
   display: inline-block;
   font-weight: 500;
@@ -163,7 +196,7 @@ font-family: 'noto-serif', serif;
 .ImgTextTextSideDesc {
   font-family: "Manrope", sans-serif;
   font-weight: 300;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   line-height: 2rem;
   padding-bottom: 1rem;
   color: #000;
@@ -610,6 +643,50 @@ font-family: 'noto-serif', serif;
 }
 
 /*! Mediterra Page End */
+
+/*! Properties Page Start */
+.featureListHeading {
+  font-family: "noto-serif", serif;
+  color: #534e4b;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 1.2rem;
+}
+.featureListHeading--hidden {
+  visibility: hidden;
+}
+.featureListContent {
+  gap: 2rem;
+  padding: 0 5rem;
+}
+.featureList {
+  list-style: none;
+}
+.featureListItem {
+  font-family: "Manrope", sans-serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: #000;
+  line-height: 2.7rem;
+}
+
+.ImgTextTextSideHeading--imgUnderDesc {
+  margin-bottom: 2rem;
+}
+
+.ImgTextTextSideHeading--imgUnderDescNumber {
+  font-size: 1.75rem;
+  position: relative;
+  top: -0.7rem;
+}
+.imgUnderDescNumberImg {
+  width: 100%;
+}
+.ImgTextImgSideImgDiv--imgUnderDesc {
+  max-width: 100%;
+}
+/*! Properties Page End */
 
 /** Media Quaries Start */
 
