@@ -67,6 +67,7 @@ font-family: 'noto-serif', serif;
   justify-items: center;
   align-items: flex-start;
 }
+
 /*? Utilities */
 .button {
   display: inline-block;
@@ -137,7 +138,7 @@ font-family: 'noto-serif', serif;
 /*! HomepageHero Section Start */
 
 .heroSection {
-  background: url(../../img/homepageImg/homepageHeroBg.png) center center no-repeat;
+  background: url(../../img/homepageImg/homepageHeroBg.jpg) center center no-repeat;
   background-size: cover;
   max-width: 100%;
   min-height: 92vh;
@@ -687,6 +688,86 @@ font-family: 'noto-serif', serif;
   max-width: 100%;
 }
 /*! Properties Page End */
+
+/*! History Section Start */
+
+.heroSectionSidePage--history {
+  background: url(../../img/historyImg/historyImg_1.jpg) center center no-repeat;
+  background-size: cover;
+}
+.twoColDescContent {
+  gap: 4rem;
+}
+.twoColDescText {
+  font-family: "Manrope", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #000;
+  line-height: 1.7rem;
+}
+
+/*! History Section End */
+
+/*! Useful Information Section Start */
+
+.LinkTabContent {
+  margin: 2rem auto;
+}
+.LinkTabList {
+  list-style: none;
+  gap: 2rem;
+}
+
+.LinkTabListItem {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #534e4b;
+  line-height: 1.1rem;
+  cursor: pointer;
+}
+.LinkTabListItem--active {
+  border-bottom: 1px solid #534e4b;
+  padding-bottom: 0.5rem;
+}
+
+.iconBoxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 0 8rem;
+}
+.iconBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e8e8e8;
+  padding: 2rem 1rem;
+  text-align: center;
+  width: 100%;
+}
+.iconBoxHeading {
+  font-family: "noto-serif", serif;
+  color: #534e4b;
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  padding: 1rem 0 1rem;
+}
+.iconBoxSubHeading {
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  padding: 0.5rem;
+}
+.iconBoxImg {
+  width: 50%;
+}
+
+/*! Useful Information Section End */
 
 /** Media Quaries Start */
 
