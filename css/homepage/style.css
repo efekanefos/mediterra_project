@@ -56,7 +56,8 @@ font-family: 'noto-serif', serif;
 }
 /*? Grid */
 .twoWayGrid,
-.threeWayGridCenterStart {
+.threeWayGridCenterStart,
+.fourWayGridCenterStart {
   display: grid;
 }
 .twoWayGrid {
@@ -64,6 +65,12 @@ font-family: 'noto-serif', serif;
 }
 .threeWayGridCenterStart {
   grid-template-columns: repeat(3, 1fr);
+}
+.fourWayGridCenterStart {
+  grid-template-columns: repeat(4, 1fr);
+}
+.threeWayGridCenterStart,
+.fourWayGridCenterStart {
   justify-items: center;
   align-items: flex-start;
 }
@@ -768,6 +775,78 @@ font-family: 'noto-serif', serif;
 }
 
 /*! Useful Information Section End */
+
+/*! Climate Section Start */
+
+.iconCardSection {
+  padding: 0rem 0 1rem;
+}
+.iconCardSection--grayBg {
+  background-color: #fcfcfc;
+}
+.iconCardContent {
+  padding: 0rem 0 2.5rem;
+  margin: 2rem auto;
+}
+.iconCard {
+  background-color: #fff;
+  width: 90%;
+  border: 1px solid #e8e8e8;
+}
+.iconCardMainHeading {
+  font-family: "noto-serif", serif;
+  text-align: center;
+  color: #534e4b;
+  font-weight: 300;
+  font-size: 2.25rem;
+  line-height: 3rem;
+  padding: 4rem 0 3rem;
+}
+.iconCardDayTime {
+  font-family: "noto-serif", serif;
+  font-weight: 400;
+  text-align: center;
+  color: #534e4b;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  padding: 1rem 0;
+}
+.iconCardDegree {
+  font-family: "Manrope", serif; /* Helvetica Nue */
+  font-size: 3rem;
+  font-weight: 200;
+  text-align: center;
+  color: #534e4b;
+  line-height: 3.5rem;
+  padding: 1rem 0;
+}
+.iconCardImgDiv {
+  text-align: center;
+}
+.iconCardImg {
+  width: 60%;
+  min-width: 4rem;
+}
+.iconCardWetnessDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.iconCardWetnessValue {
+  font-family: "Manrope", serif; /* Helvetica Nue */
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  color: #534e4b;
+  line-height: 1.2rem;
+  padding: 1rem 0;
+}
+.iconCardWetnessImg {
+  width: 70%;
+  min-width: 1rem;
+}
+
+/*! Climate Section End */
 
 /** Media Quaries Start */
 
