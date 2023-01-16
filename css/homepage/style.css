@@ -848,6 +848,119 @@ font-family: 'noto-serif', serif;
 
 /*! Climate Section End */
 
+/*! Access Section End */
+
+.HeadingDescSection--access .HeadingDescHeadingSideHeading {
+  text-align: left;
+}
+.mapImgDiv {
+  position: relative;
+}
+.mapImg {
+  width: 100%;
+}
+.mapInfoRectangleDiv {
+  position: absolute;
+  bottom: 1.75rem;
+  left: 1.75rem;
+  background-color: #fff;
+  width: 30%;
+  padding: 1rem;
+}
+.mapInfoRectangleUpperDiv {
+  display: flex;
+  justify-content: space-between;
+}
+.mapInfoRectangleHeading {
+  font-family: "noto-serif", serif;
+  font-weight: 300;
+  color: #000;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+.mapInfoRectangleCloseBtn {
+  background: none;
+  border: none;
+  outline: none;
+  font-family: "Manrope", serif; /* Helvetica Nue */
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #000;
+  line-height: 1.2rem;
+  text-decoration: underline;
+}
+.mapInfoRectangleCompanyHeadingDiv,
+.mapInfoRectangleDayHeadingDiv,
+.mapInfoRectangleFreqHeadingDiv,
+.mapInfoRectangleDurationHeadingDiv {
+  display: flex;
+  font-family: "Manrope", serif; /* Helvetica Nue */
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #000;
+  line-height: 1.2rem;
+  gap: 0.25rem;
+  padding: 0.125rem 0;
+}
+.mapInfoRectangleMiniDiv {
+  margin-top: 1rem;
+}
+
+.rightListDiv {
+  background-color: #fff;
+  position: absolute;
+  bottom: 1.75rem;
+  right: 1.75rem;
+}
+.upperRightList,
+.mainRightList,
+.mainRightInnerList {
+  list-style: none;
+}
+.upperRightList {
+  display: flex;
+  padding: 1.25rem 1.5rem;
+  gap: 2rem;
+
+  border-bottom: 1px solid #f3f3f3;
+}
+.upperRightListItem {
+  font-family: "Manrope", serif; /* Helvetica Nue */
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #412a28;
+  line-height: 1rem;
+  padding-bottom: 1px;
+}
+.upperRightListItem--active {
+  border-bottom: 1px solid #412a28;
+}
+.mainRightListItem,
+.mainRightInnerListItem {
+  font-family: "Manrope", serif; /* Helvetica Nue */
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #412a28;
+  line-height: 1rem;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid #f3f3f3;
+  cursor: pointer;
+}
+.mainRightListItem--active {
+  border-bottom: none;
+}
+.mainRightInnerListItem {
+  border: none;
+}
+.mainRightInnerListItem:last-child {
+  border-bottom: 1px solid #f3f3f3;
+}
+.mainRightInnerListItem--active {
+  color: #ff5ab3;
+}
+
+/*! Access Section End */
+
 /** Media Quaries Start */
 
 @media (max-width: 1250px) {
