@@ -961,6 +961,14 @@ font-family: 'noto-serif', serif;
 
 /*! Access Section End */
 
+/*! Access Section Start */
+
+.HeadingDescSection--alsancak .HeadingDescHeadingSideHeading {
+  text-align: center;
+}
+
+/*! Access Section End */
+
 /** Media Quaries Start */
 
 @media (max-width: 1250px) {
