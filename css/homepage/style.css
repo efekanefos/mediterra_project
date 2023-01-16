@@ -942,7 +942,7 @@ font-family: 'noto-serif', serif;
   font-weight: 400;
   color: #412a28;
   line-height: 1rem;
-  padding: 0.5rem 0.75rem;
+  padding: 0.75rem 0.75rem;
   border-bottom: 1px solid #f3f3f3;
   cursor: pointer;
 }
@@ -961,13 +961,19 @@ font-family: 'noto-serif', serif;
 
 /*! Access Section End */
 
-/*! Access Section Start */
+/*! Alsancak Section Start */
 
 .HeadingDescSection--alsancak .HeadingDescHeadingSideHeading {
   text-align: center;
 }
-
-/*! Access Section End */
+.rightListDiv--alsancak {
+  min-width: 15rem;
+}
+.rightListDiv--alsancak .mainRightListItem--active {
+  border-bottom: 1px solid #f3f3f3;
+  color: #ff5ab3;
+}
+/*! Alsancak Section End */
 
 /** Media Quaries Start */
 
