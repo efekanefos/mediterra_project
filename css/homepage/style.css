@@ -262,6 +262,7 @@ font-family: 'noto-serif', serif;
   background-color: #412a28;
   display: flex;
   padding: 3rem 0;
+  padding-left: 1.5rem;
   justify-content: flex-end;
   width: 100%;
 }
@@ -310,10 +311,10 @@ font-family: 'noto-serif', serif;
 .propertySelectionListItem--active::before {
   content: " ";
   width: 0.2rem;
-  height: 2.2rem;
+  height: 70%;
   background-color: #fff;
   position: absolute;
-  top: 0.7rem;
+  top: 15%;
   left: -1rem;
 }
 
@@ -421,11 +422,12 @@ font-family: 'noto-serif', serif;
   flex-direction: column;
   padding: 4rem 0;
 }
-.mediterraFooterLogoDiv {
-  max-width: 4rem;
-}
+
 .mediterraFooterLogoImg {
-  width: 100%;
+  width: 55%;
+  display: block;
+  margin: 1rem auto;
+  text-align: center;
 }
 .mediterraFooterHeading {
   font-family: "noto-serif", serif;
@@ -454,6 +456,7 @@ font-family: 'noto-serif', serif;
 .heroSubHeadingSidePage {
   font-weight: 500;
   font-family: "Manrope", sans-serif;
+  text-align: center;
 }
 
 .HeadingDescContent {
@@ -999,6 +1002,43 @@ font-family: 'noto-serif', serif;
   .BigSizeDescContent {
     font-size: 1.5rem;
   }
+  /*! 17.01 */
+  /*! Homepage */
+  .propertySelectionPropertySide {
+    gap: 1rem;
+  }
+  .propertySelectionListItem {
+    font-size: 1.5rem;
+  }
+  .propertySelectionButton {
+    font-size: 1rem;
+  }
+
+  .ImgTextContent {
+    gap: 3rem;
+  }
+  .ImgTextTextSideDesc {
+    line-height: 1.5rem;
+  }
+
+  /*! Climate Page */
+  .iconCardSection .fourWayGridCenterStart {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .iconCards {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .iconCard {
+    width: 100%;
+  }
+
+  /*! Useful Info Page */
+  .iconBoxes {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 3rem;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -1009,6 +1049,104 @@ font-family: 'noto-serif', serif;
   }
   .ImgTextTextSide {
     order: 1;
+  }
+  /*! 17-01 */
+  /*! Homepage */
+  .headerSection {
+    display: none;
+  }
+  .mediterraInfoContent {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+  .mediterraInfoDesc {
+    font-size: 1.5rem;
+  }
+  .propertySelectionContent {
+    flex-direction: column;
+  }
+  .propertySelectionPropertySide {
+    gap: 0;
+    width: 100%;
+  }
+  .propertySelectionImgSide {
+    width: 100%;
+  }
+  .propertySelectionSliderDesc {
+    max-width: 90%;
+    font-size: 0.9rem;
+  }
+  .swiper {
+    height: auto;
+  }
+  .swiperPaginations {
+    padding: 0;
+    margin-top: 2rem;
+  }
+  .ImgTextImgSideImgDiv {
+    max-width: 60%;
+  }
+
+  /*! Climate Page */
+  .iconCardSection .fourWayGridCenterStart {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 550px) {
+  /*! Homepage */
+  .homepageHeroLogoDiv {
+    max-width: 70%;
+  }
+  .heroSubHeading {
+    font-size: 1.35rem;
+  }
+  .heroButton {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+  .ImgTextImgSideImgDiv {
+    max-width: 80%;
+  }
+
+  .heroInfoDiv {
+    padding: 0 1rem;
+  }
+  .heroHeadingSidePage {
+    font-size: 3.5rem;
+  }
+  .heroSubHeadingSidePage {
+    font-size: 1.25rem;
+  }
+  .LinkTabList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: end;
+    padding: 1rem 2rem;
+  }
+  .LinkTabListItem {
+    width: auto;
+    margin: auto;
+    text-align: center;
+    line-height: 1.5rem;
+  }
+  .iconCardMainHeading {
+    padding: 0rem 0.5rem;
+    font-size: 1.75rem;
+  }
+  .iconCardDegree {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .iconCardMainHeading {
+    padding: 1rem 0.5rem;
+  }
+
+  .iconBoxes {
+    grid-template-columns: 1fr;
   }
 }
 
