@@ -1051,9 +1051,10 @@ font-family: 'noto-serif', serif;
   .ourTeamCards {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
+    padding: 1rem;
   }
   .ourTeamCard {
-    width: 80%;
+    width: 100%;
   }
   .ourTeamCardImg {
     width: 100%;
