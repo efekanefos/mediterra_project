@@ -1102,6 +1102,12 @@ font-family: 'noto-serif', serif;
     line-height: normal;
     font-size: 1vw;
   }
+  /*! Nature Page */
+  .container--leftSided,
+  .container--rightSided {
+    max-width: 100%;
+    padding: 1rem !important;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -1221,9 +1227,46 @@ font-family: 'noto-serif', serif;
   .ImgTextSection--leftSided {
     justify-content: center;
   }
+  /*! Alsancak Page */
+  .rightListDiv,
+  .mapInfoRectangleDiv {
+    position: static;
+  }
+  .mapInfoRectangleDiv {
+    width: 100%;
+  }
+  .mapInfoRectangleHeading {
+    line-height: 1rem;
+    font-size: 1rem;
+  }
+  .mapInfoRectangleCompanyHeadingDiv,
+  .mapInfoRectangleDayHeadingDiv,
+  .mapInfoRectangleFreqHeadingDiv,
+  .mapInfoRectangleDurationHeadingDiv,
+  .mapInfoRectangleCloseBtn {
+    font-size: 0.9rem;
+  }
+  .mapInfoRectangleCloseBtn {
+    display: none;
+  }
+  .upperRightList {
+    padding: 1rem;
+  }
+  .upperRightListItem {
+    font-size: 0.9rem;
+  }
+  .mainRightListItem,
+  .mainRightInnerListItem {
+    padding: 0.5rem 1rem;
+    line-height: normal;
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 550px) {
+  .container {
+    margin: 1.5rem auto;
+  }
   /*! Homepage */
   .homepageHeroLogoDiv {
     max-width: 70%;
@@ -1322,6 +1365,10 @@ font-family: 'noto-serif', serif;
   }
   .featureListItem {
     line-height: 2rem;
+  }
+  /*! Access Page */
+  .HeadingDescHeadingSideHeading {
+    font-size: 1.5rem;
   }
 }
 
