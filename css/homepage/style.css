@@ -452,6 +452,7 @@ font-family: 'noto-serif', serif;
 .heroHeadingSidePage {
   font-weight: 300;
   font-family: "Manrope", sans-serif;
+  text-align: center;
 }
 .heroSubHeadingSidePage {
   font-weight: 500;
@@ -477,7 +478,7 @@ font-family: 'noto-serif', serif;
 }
 .HeadingDescDesc {
   font-family: "Manrope", sans-serif;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 0.9rem;
   color: #000;
   line-height: 1.8rem;
@@ -648,7 +649,7 @@ font-family: 'noto-serif', serif;
   gap: 0.25rem;
 }
 .ImgTextImgSideLittleImg {
-  width: 100%;
+  width: 49%;
   flex: 1;
 }
 .ImgTextImgSideImgDiv--multipleImage {
@@ -1057,6 +1058,22 @@ font-family: 'noto-serif', serif;
   .ourTeamCardImg {
     width: 100%;
   }
+
+  /*! Design Foundation Page */
+
+  .MediumSizeDescContent {
+    padding: 0.5rem 1rem;
+    font-size: 1.5em;
+  }
+
+  /*! Properties Page */
+  .featureListContent {
+    gap: 0.75rem;
+    padding: 0 2.5rem;
+  }
+  .featureListItem {
+    line-height: 2rem;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -1120,7 +1137,8 @@ font-family: 'noto-serif', serif;
     margin-bottom: 2rem;
   }
   .HeadingDescDesc {
-    line-height: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
     padding-bottom: 0.75rem;
   }
   .ourTeamCards {
@@ -1130,6 +1148,50 @@ font-family: 'noto-serif', serif;
 
   .twoColDescContent {
     flex-direction: column;
+    gap: 1rem;
+  }
+  .twoColDescText {
+    font-size: 0.9rem;
+  }
+
+  /*! Culture Page */
+  .VerticalImgTextContent {
+    row-gap: 2rem;
+  }
+  .VerticalImgTextDesc {
+    line-height: 1.5rem;
+  }
+  .VerticalImgTextHeading {
+    line-height: 1.75rem;
+    font-size: 1.75rem;
+  }
+  .VerticalImgTextImgDiv,
+  .VerticalImgTextHeading,
+  .VerticalImgTextDesc {
+    width: 90%;
+  }
+
+  /*! Mediterra Page */
+  .BigSizeDescContent {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    padding: 0.5rem;
+  }
+  .dividerHeadingTitle {
+    font-size: 1.5rem;
+  }
+
+  /*! Properties Page */
+  .featureListContent {
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+  }
+  .featureListItem {
+    line-height: 2rem;
+  }
+  .ImgTextSection--rightSided,
+  .ImgTextSection--leftSided {
+    justify-content: center;
   }
 }
 
@@ -1194,6 +1256,44 @@ font-family: 'noto-serif', serif;
   }
   .ourTeamCard {
     width: 70%;
+  }
+
+  /*! Culture Page */
+  .VerticalImgTextContent {
+    grid-template-columns: 1fr;
+  }
+  .VerticalImgTextImgDiv,
+  .VerticalImgTextHeading,
+  .VerticalImgTextDesc {
+    max-width: 70%;
+  }
+  /*! Mediterra Page */
+  .BigSizeDescContent {
+    font-size: 1.125rem;
+    padding: 1rem;
+  }
+  .dividerHeadingDesc {
+    line-height: 1.5rem;
+  }
+
+  /*! Design Foundation Page */
+
+  .MediumSizeDescContent {
+    font-size: 1.25em;
+  }
+
+  /*! Properties Page */
+  .featureListContent {
+    grid-template-columns: 1fr;
+  }
+  .featureListDiv {
+    width: 100%;
+  }
+  .featureListHeading--hidden {
+    display: none;
+  }
+  .featureListItem {
+    line-height: 2rem;
   }
 }
 
