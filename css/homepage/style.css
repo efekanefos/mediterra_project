@@ -1154,7 +1154,7 @@ font-family: 'noto-serif', serif;
     margin-top: 2rem;
   }
   .ImgTextImgSideImgDiv {
-    max-width: 60%;
+    max-width: 100%;
   }
 
   /*! Climate Page */
@@ -1279,7 +1279,7 @@ font-family: 'noto-serif', serif;
     margin: 1rem 0;
   }
   .ImgTextImgSideImgDiv {
-    max-width: 80%;
+    max-width: 100%;
   }
 
   .heroInfoDiv {
