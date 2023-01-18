@@ -380,7 +380,7 @@ font-family: 'noto-serif', serif;
 }
 .swiper-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 1rem;
 }
@@ -712,6 +712,7 @@ font-family: 'noto-serif', serif;
 }
 .twoColDescContent {
   gap: 4rem;
+  padding: 0 1rem;
 }
 .twoColDescText {
   font-family: "Manrope", sans-serif;
@@ -1124,6 +1125,11 @@ font-family: 'noto-serif', serif;
   }
   .ourTeamCards {
     grid-template-columns: 1fr 1fr;
+  }
+  /*! History Page */
+
+  .twoColDescContent {
+    flex-direction: column;
   }
 }
 
