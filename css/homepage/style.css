@@ -1074,6 +1074,34 @@ font-family: 'noto-serif', serif;
   .featureListItem {
     line-height: 2rem;
   }
+
+  /*! Alsancak Page */
+  .mapInfoRectangleDiv {
+    width: 40%;
+  }
+  .mapInfoRectangleHeading {
+    line-height: 1rem;
+    font-size: 0.9rem;
+  }
+  .mapInfoRectangleCompanyHeadingDiv,
+  .mapInfoRectangleDayHeadingDiv,
+  .mapInfoRectangleFreqHeadingDiv,
+  .mapInfoRectangleDurationHeadingDiv,
+  .mapInfoRectangleCloseBtn {
+    font-size: 0.8rem;
+  }
+  .upperRightList {
+    padding: 1rem;
+  }
+  .upperRightListItem {
+    font-size: 0.7rem;
+  }
+  .mainRightListItem,
+  .mainRightInnerListItem {
+    padding: 2.5%;
+    line-height: normal;
+    font-size: 1vw;
+  }
 }
 @media (max-width: 768px) {
   .container {
