@@ -460,7 +460,7 @@ font-family: 'noto-serif', serif;
 }
 
 .HeadingDescContent {
-  padding: 2rem 0;
+  padding: 2rem 1rem;
 }
 
 .HeadingDescHeadingSide,
@@ -504,15 +504,20 @@ font-family: 'noto-serif', serif;
   line-height: 1.1rem;
 }
 .ourTeamCards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   gap: 2rem;
   padding: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  max-width: 1200px;
 }
 .ourTeamCard {
-  width: 13.5rem;
+  width: 100%; /* 13.5 */
+}
+.ourTeamCardImg {
+  width: 100%;
 }
 .ourTeamCardName,
 .ourTeamCardDepartmant {
@@ -1039,6 +1044,18 @@ font-family: 'noto-serif', serif;
     grid-template-columns: 1fr 1fr;
     padding: 0 3rem;
   }
+
+  /*! About Page */
+  .ourTeamCards {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+  .ourTeamCard {
+    width: 80%;
+  }
+  .ourTeamCardImg {
+    width: 100%;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -1092,6 +1109,21 @@ font-family: 'noto-serif', serif;
   .iconCardSection .fourWayGridCenterStart {
     grid-template-columns: 1fr;
     gap: 1rem;
+  }
+  /*! About Page */
+  .HeadingDescContent {
+    flex-direction: column;
+  }
+  .HeadingDescHeadingSideHeading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .HeadingDescDesc {
+    line-height: 1.25rem;
+    padding-bottom: 0.75rem;
+  }
+  .ourTeamCards {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -1147,6 +1179,15 @@ font-family: 'noto-serif', serif;
 
   .iconBoxes {
     grid-template-columns: 1fr;
+  }
+
+  /*! About Page */
+  .ourTeamCards {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+  .ourTeamCard {
+    width: 70%;
   }
 }
 
