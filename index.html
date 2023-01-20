@@ -109,8 +109,6 @@
         </ul>
       </header>
 
-      <!-- header end -->
-
       <script>
         const mobileHeaderToggle = document.querySelector(".toggleHeaderBtn");
         const mobileHeaderList = document.querySelector(".mobileHeaderList");
@@ -124,6 +122,87 @@
             let innerList = e.target.nextElementSibling;
             //console.log(innerList);
             innerList.classList.toggle("openHeader");
+          });
+        });
+      </script>
+
+      <!-- header end -->
+
+      <header class="">
+        <nav class="navbar">
+          <div class="navbar__logo">
+            <a href="#home" class="inner-link">
+              <img src="./img/homepageImg/headerLogo.svg" alt="" />
+            </a>
+          </div>
+
+          <div class="hamburger-menu">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+          </div>
+
+          <div class="mobile-menu">
+            <div class="mobileList">
+              <div class="mobileListItem">
+                <a href="#" class="btn">Project + </a>
+                <ul class="innerHeaderList">
+                  <li>
+                    <a class="innerHeaderListItem" href="#">Design Foundation</a>
+                  </li>
+                  <li>
+                    <a class="innerHeaderListItem" href="#">Properties</a>
+                  </li>
+                  <li>
+                    <a class="innerHeaderListItem" href="#">The Mediterra</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="mobileListItem">
+                <a href="#" class="btn">North West Cyprus+ </a>
+                <ul class="innerHeaderList">
+                  <li>
+                    <a class="innerHeaderListItem" href="#">Location</a>
+                  </li>
+                  <li>
+                    <a class="innerHeaderListItem" href="#">Nature</a>
+                  </li>
+                  <li>
+                    <a class="innerHeaderListItem" href="#">History</a>
+                  </li>
+                  <li>
+                    <a class="innerHeaderListItem" href="#">Culture</a>
+                  </li>
+                </ul>
+              </div>
+
+              <a href="#" class="btn">About Us</a>
+              <a href="#" class="btn">Contact</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <script>
+        const hamburgerMenu = document.querySelector(".hamburger-menu");
+        const mobileMenu = document.querySelector(".mobile-menu");
+        const menuLine = document.querySelector(".menu-line");
+
+        hamburgerMenu.addEventListener("click", () => {
+          mobileMenu.classList.toggle("mobile-menu--open");
+          hamburgerMenu.classList.toggle("hamburger-menu--open");
+        });
+
+        const InnerListItem = document.querySelectorAll(".mobileListItem");
+        const InnerListItemLink = document.querySelector(".mobileListItem a");
+
+        InnerListItem.forEach((list) => {
+          list.addEventListener("click", (e) => {
+            let innerList = e.target.nextElementSibling;
+            //console.log(innerList);
+            innerList.classList.toggle("openHeader");
+            innerList.classList.toggle("active");
           });
         });
       </script>
