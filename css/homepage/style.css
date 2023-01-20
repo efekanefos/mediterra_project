@@ -1607,16 +1607,6 @@ header.sticky {
 .mobileListItem {
   position: relative;
 }
-.mobileListItem::after {
-  content: "⇩";
-  position: absolute;
-  top: 1.4rem;
-  right: 00rem;
-  transform: translate(-50%, -50%);
-  font-size: 1.1rem;
-  font-weight: bold;
-  pointer-events: none;
-}
 .innerHeaderListItem {
   padding: 5px 15px;
 }
